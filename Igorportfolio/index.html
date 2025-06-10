@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="pagina">Escolha seu Idioma</title>
+  <link rel="shortcut icon" href="eyefavicoin.png" type="image/x-icon">
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="textoInicial">Escolha seu idioma: </h1>
+    <div id="language-buttons">
+      <button onclick="escolheridioma('pt')" onmouseover="alternarIdioma('pt')" onmouseout="restaurarFavicon()">
+        <img src="br.png" alt="Português" class="flag" />
+        Português
+      </button>
+      <button onclick="escolheridioma('en')" onmouseover="alternarIdioma('en')" onmouseout="restaurarFavicon()">
+        <img src="us.png" alt="English" class="flag" />
+        English
+      </button>
+    </div>
+    <div id="conteudo">
+      <h1 id="title"></h1>
+      <p id="subtitle"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
